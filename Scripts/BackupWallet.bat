@@ -7,9 +7,8 @@ echo %name%> ..\core\name.txt
 SET /P nam=<..\core\name.txt
 SET /P data=<..\core\data.txt
 SET /P conf=<..\core\conf.txt
-SET bitd=coind -datadir=%data% -conf=%conf%
 MKDIR %sav%\%nam%
-%bitd% backupwallet %sav%\%nam%
+coind -datadir=%data% -conf=%conf% backupwallet %sav%\%nam%
 echo Your wallet has been saved in "%sav%\%nam%"
 del ..\core\name.txt
 del ..\core\save.txt
