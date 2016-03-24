@@ -1,10 +1,17 @@
 Title: Bitcoin/Altcoin Tools for Newbies - Version 0.2 (Mar 2016)
+
 Created By: ExabyteMiner (exabyte.miner@aol.com)
+
 Help/Info/Requests: https://bitcointalk.org/index.php?topic=1409955.0
+
 BTC: 1MTyUhGqoJNwS7CmgB4ftPv8e2scZCLPgr
+
 LTC: LSUmutbRFsfrJEcgTNSpjStHpg5899gUJX
+
 BERN: BSUbLQodGQ3Jd6QtvpFTg2N7SWzm3feQpT
+
 BOD: bYhmxJ5NXMfPXmkHh3xbZeZaCaiu5rmQ3n
+
 CANN: CZBWsz2TQEJNPZ7d6PBCtVWeKBEH8Gtqn7
 
 
