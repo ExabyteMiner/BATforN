@@ -5,7 +5,6 @@ SET /P exe=What is the path to your coin's EXE file (i.e. C:\Program Files\Bitco
 ECHO %exe%> ..\core\tmp\exe.txt
 SET /P name=What is the name of your EXE file (i.e. Bitcoin-QT)?:
 ECHO %name%> ..\core\tmp\name.txt
-ECHO Processing, wallet will open and close multiple times, please wait until it finishes...
 SET /P string=<..\core\tmp\name.txt
 SET clean=%string:.exe=%
 ECHO %clean%> ..\core\tmp\clean.txt
@@ -14,6 +13,7 @@ SET /P conf=<..\core\conf.txt
 SET bitd=coind -datadir=%data% -conf=%conf%
 SET /P tmp=What is the transaction ID for the unconfirmed transaction?
 ECHO %tmp%> ..\core\tmp\tmp.txt
+ECHO Processing, wallet will open and close multiple times, please wait until it finishes...
 SET /P tmp2=< ..\core\tmp\tmp.txt
 %bitd% getrawtransaction %tmp2%> ..\core\tmp\txinfo.txt
 ECHO Waiting 10 seconds for program to close...
