@@ -1,14 +1,13 @@
 @echo off
 color 0a
-MKDIR ..\OUTPUTS
 SET /P addy=What address do you want to dump the priv key for?:
-echo %addy%> ..\core\addy.txt
+ECHO %addy%> ..\core\addy.txt
 SET /P data=<..\core\data.txt
 SET /P conf=<..\core\conf.txt
 SET /P add=<..\core\addy.txt
 SET bitd=coind -datadir=%data% -conf=%conf%
-SET dmp=%bitd% dumpprivkey %add%
-%dmp%> ..\OUTPUTS\privkey.txt
-del ..\core\addy.txt
-echo Your privkey is in the "BATforN\OUTPUTS" folder.
+MKDIR ..\OUTPUTS
+%bitd% dumpprivkey %add%> ..\OUTPUTS\privkey.txt
+DEL ..\core\addy.txt
+ECHO Your privkey is in the "BATforN\OUTPUTS" folder.
 pause
