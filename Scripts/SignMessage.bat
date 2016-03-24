@@ -2,7 +2,7 @@
 color 0a
 SET /P addy=What is the address you would like to sign?
 ECHO %addy%> ..\core\addy.txt
-SET /P msg=What message do you wish to sign with (NO SPACES!)?
+SET /P msg=What message do you wish to sign with?
 ECHO %msg%> ..\core\msg.txt
 SET /P data=<..\core\data.txt
 SET /P conf=<..\core\conf.txt
