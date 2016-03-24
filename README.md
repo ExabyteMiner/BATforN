@@ -18,8 +18,6 @@ CANN: CZBWsz2TQEJNPZ7d6PBCtVWeKBEH8Gtqn7
 
 INTRO
 ------------------------
-This is the very first edition of BATforN (Bitcoin/Altcoin Tools for Newbies).
-
 BATforN started as a way to make my own Bitcoin/Altcoin tasks faster and easier to accomplish. As I progressed, I decided I
 would release my files for public use and so I have also added scripts that I thought might be useful for people who are 
 either new to Bitcoin or just less tech-savvy in general. If you're not comfortable with using the debug console, you find 
