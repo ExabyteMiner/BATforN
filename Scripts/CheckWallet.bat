@@ -2,6 +2,5 @@
 color 0a
 SET /P data=<..\core\data.txt
 SET /P conf=<..\core\conf.txt
-SET bitd=coind -datadir=%data% -conf=%conf%
-%bitd% checkwallet
+coind -datadir=%data% -conf=%conf% checkwallet
 pause
