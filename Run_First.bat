@@ -12,3 +12,5 @@ SET /P new=< core\tmp2.txt
 ECHO %new%.conf> core\conf.txt
 DEL core\tmp.txt
 DEL core\tmp2.txt
+ECHO BATforN has been configured, you may now run the tools in the "Scripts" folder.
+pause
