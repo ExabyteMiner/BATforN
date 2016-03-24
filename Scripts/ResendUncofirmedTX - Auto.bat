@@ -1,7 +1,6 @@
 @echo off
 color 0a
 MKDIR ..\core\tmp
-MKDIR ..\OUTPUTS
 SET /P exe=What is the path to your coin's EXE file (i.e. C:\Program Files\Bitcoin)?:
 ECHO %exe%> ..\core\tmp\exe.txt
 SET /P name=What is the name of your EXE file (i.e. Bitcoin-QT)?:
@@ -13,8 +12,7 @@ ECHO %clean%> ..\core\tmp\clean.txt
 SET /P data=<..\core\data.txt
 SET /P conf=<..\core\conf.txt
 SET bitd=coind -datadir=%data% -conf=%conf%
-SET get=%bitd% getrawmempool
-%get%> ..\core\tmp\mem.txt
+%bitd% getrawmempool> ..\core\tmp\mem.txt
 MORE +1 ..\core\tmp\mem.txt > ..\core\tmp\mem2.txt
 SET /P mem=<..\core\tmp\mem2.txt
 SET space=%mem: =%
@@ -43,6 +41,7 @@ CD ..\..\..\Scripts
 ECHO Waiting 60 seconds for program to launch...
 TIMEOUT /T 60
 SET /P txi=<..\core\tmp\txinfo.txt
+MKDIR ..\OUTPUTS
 coind -datadir=..\core\tmp -conf=%conf% sendrawtransaction %txi%> ..\OUTPUTS\TXID.txt
 ECHO Waiting 10 seconds for transaction to process...
 TIMEOUT /T 10
