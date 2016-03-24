@@ -5,10 +5,10 @@ echo %sav%> ..\core\save.txt
 SET /P name=Enter name of coin:
 echo %name%> ..\core\name.txt
 SET /P nam=<..\core\name.txt
-MKDIR %sav%\%nam%
 SET /P data=<..\core\data.txt
 SET /P conf=<..\core\conf.txt
 SET bitd=coind -datadir=%data% -conf=%conf%
+MKDIR %sav%\%nam%
 %bitd% backupwallet %sav%\%nam%
 echo Your wallet has been saved in "%sav%\%nam%"
 del ..\core\name.txt
