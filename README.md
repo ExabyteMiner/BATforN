@@ -1,4 +1,4 @@
-Title: Bitcoin/Altcoin Tools for Newbies - Version 1.0 (Mar 2016)
+Title: Bitcoin/Altcoin Tools for Newbies - Version 0.2b (Mar 2016)
 
 Created By: ExabyteMiner (exabyte.miner@aol.com)
 
@@ -45,6 +45,6 @@ Step 2: Open the "Scripts" folder and run the appropriate script for the task yo
 
 CHANGELOG
 -------------------------
-Mar 24, 2016 - Fixed "SignMessage" and "VerifyMessage" scripts, added functionality to resend stuck transactions, changed script handling
+Mar 24, 2016 - Fixed "SignMessage" and "VerifyMessage" scripts, added functionality to resend stuck transactions
 
 Mar 23, 2016 - Initial Release
