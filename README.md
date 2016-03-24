@@ -45,7 +45,7 @@ Step 2: Open the "Scripts" folder and run the appropriate script for the task yo
 
 CHANGELOG
 -------------------------
-Mar 25, 2016 - Made script output more descriptive
+Mar 25, 2016 - Made script output more descriptive, Made code cleaner/less redundant
 
 Mar 24, 2016 - Fixed "SignMessage" and "VerifyMessage" scripts, added functionality to resend stuck transactions
 
