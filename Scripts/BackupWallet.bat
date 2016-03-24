@@ -9,8 +9,7 @@ MKDIR %sav%\%nam%
 SET /P data=<..\core\data.txt
 SET /P conf=<..\core\conf.txt
 SET bitd=coind -datadir=%data% -conf=%conf%
-SET bak=%bitd% backupwallet %sav%\%nam%
-%bak%
+%bitd% backupwallet %sav%\%nam%
 echo Your wallet has been saved in "%sav%\%nam%"
 del ..\core\name.txt
 del ..\core\save.txt
