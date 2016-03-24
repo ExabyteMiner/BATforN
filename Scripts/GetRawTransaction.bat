@@ -1,6 +1,6 @@
 @echo off
 color 0a
-SET /P tx=What is the txid of the transaction you would like to view?
+SET /P tx=What is the transaction ID of the transaction you would like to view?
 ECHO %tx%> ..\core\tx.txt
 SET /P data=<..\core\data.txt
 SET /P conf=<..\core\conf.txt
