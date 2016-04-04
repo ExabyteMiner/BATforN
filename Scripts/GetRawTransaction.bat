@@ -8,5 +8,7 @@ SET /P txid=<..\core\tx.txt
 MKDIR ..\OUTPUTS
 coind -datadir=%data% -conf=%conf% getrawtransaction %txid%> ..\OUTPUTS\RawTransaction.txt
 DEL ..\core\tx.txt
-ECHO Your transaction info is in "BATforN\OUTPUTS" folder
-pause
+ECHO Your transaction info is in "BATforN\OUTPUTS" folder, this window will close in 10 seconds...
+%SystemRoot%\explorer.exe ..\OUTPUTS
+TIMEOUT /T 10
+EXIT 0

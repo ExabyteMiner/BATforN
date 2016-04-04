@@ -42,5 +42,7 @@ TIMEOUT /T 10
 START %pth%\%nam%.exe -datadir=%data% -conf=%conf%
 RMDIR ..\core\tmp /s /q
 SET /P id=<..\OUTPUTS\TXID.txt
-ECHO The new transaction ID is %id% and has been copied to "BATforN\OUTPUTS\TXID.txt"
-pause
+ECHO The new transaction ID is %id% and has been copied to "BATforN\OUTPUTS\TXID.txt", this program will close in 10 seconds...
+%SystemRoot%\explorer.exe ..\OUTPUTS
+TIMEOUT /T 10
+EXIT 0

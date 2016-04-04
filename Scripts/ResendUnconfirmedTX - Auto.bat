@@ -21,9 +21,15 @@ SET /P tmp=<..\core\tmp\tmp.txt
 SET comma=%tmp:,=%
 ECHO %comma%> ..\core\tmp\tmp2.txt
 SET /P tmp2=<..\core\tmp\tmp2.txt
-SET quote=%tmp2:"=%
-ECHO %quote%> ..\core\tmp\tmp3.txt
+SET qte=%tmp2:"=%
+ECHO %qte%> ..\core\tmp\tmp3.txt
 SET /P tmp3=<..\core\tmp\tmp3.txt
+IF "%tmp3%" == "]" (
+ECHO There are no zero confirmation transactions to resend, this window will close in 10 seconds...
+RMDIR ..\core\tmp /s /q
+TIMEOUT /T 10
+EXIT 0
+) ELSE (
 %bitd% getrawtransaction %tmp3%> ..\core\tmp\txinfo.txt
 ECHO Waiting 10 seconds for program to close...
 %bitd% stop
@@ -51,5 +57,8 @@ TIMEOUT /T 10
 START %pth%\%nam%.exe -datadir=%data% -conf=%conf%
 RMDIR ..\core\tmp /s /q
 SET /P id=<..\OUTPUTS\TXID.txt
-ECHO The new transaction ID is %id% and has been copied to "BATforN\OUTPUTS\TXID.txt"
-pause
+ECHO The new transaction ID is %id% and has been copied to "BATforN\OUTPUTS\TXID.txt", this program will close in 10 seconds...
+%SystemRoot%\explorer.exe ..\OUTPUTS
+TIMEOUT /T 10
+EXIT 0
+)

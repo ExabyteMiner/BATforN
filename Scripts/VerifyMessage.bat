@@ -11,8 +11,8 @@ SET /P conf=<..\core\conf.txt
 SET /P add=<..\core\addy.txt
 SET /P str=<..\core\sig.txt
 SET /P mse=<..\core\msg.txt
-coind -datadir=%data% -conf=%conf% verifymessage "%add%" "%str%" "%mse%"
+coind -datadir=%data% -conf=%conf% verifymessage %add% %str% %mse%
+pause
 DEL ..\core\addy.txt
 DEL ..\core\sig.txt
 DEL ..\core\msg.txt
-pause
