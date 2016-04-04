@@ -1,6 +1,13 @@
-@echo off
+::@echo off::
 color 0a
 MKDIR core
+SET /P crypt=Is your wallet currently encrypted (yes or no)?
+IF %crypt%==yes (
+ECHO Yes> core\pass.txt
+) ELSE (
+goto setup:
+)
+:setup
 SET /P data=Enter path to your coin's data directory:
 ECHO %data%> core\data.txt
 SET /P conf=Enter name of your coin's config file:

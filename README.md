@@ -1,10 +1,8 @@
-Title: Bitcoin/Altcoin Tools for Newbies - Version 1.0.2 (Mar 2016)
+Title: Bitcoin/Altcoin Tools for Newbies - Version 1.0.3 (Mar 2016)
 
 Created By: ExabyteMiner (exabyte.miner@aol.com)
 
 Help/Info/Requests: https://bitcointalk.org/index.php?topic=1409955.0
-
-GitHub: http://github.com/ExabyteMiner/BATforN
 
 BTC: 1MTyUhGqoJNwS7CmgB4ftPv8e2scZCLPgr
 
