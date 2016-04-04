@@ -45,7 +45,8 @@ Step 2: Open the "Scripts" folder and run the appropriate script for the task yo
 
 CHANGELOG
 -------------------------
-Apr 04, 2016 - Fixed an issue preventing scripts from working with encrypted wallets, improved user experience
+Apr 04, 2016 - Fixed an issue preventing scripts from working with encrypted wallets, improved user experience, updated "RunFirst"
+               to prompt user if wallet is currently encrypted and to configure BATforN appropriately
 
 Mar 25, 2016 - Made script output more descriptive, made code cleaner/less redundant, improved user experience (more user-friendly)
 
