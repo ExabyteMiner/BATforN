@@ -1,8 +1,10 @@
-Title: Bitcoin/Altcoin Tools for Newbies - Version 1.0.1 (Mar 2016)
+Title: Bitcoin/Altcoin Tools for Newbies - Version 1.0.2 (Mar 2016)
 
 Created By: ExabyteMiner (exabyte.miner@aol.com)
 
 Help/Info/Requests: https://bitcointalk.org/index.php?topic=1409955.0
+
+GitHub: http://github.com/ExabyteMiner/BATforN
 
 BTC: 1MTyUhGqoJNwS7CmgB4ftPv8e2scZCLPgr
 
@@ -45,7 +47,9 @@ Step 2: Open the "Scripts" folder and run the appropriate script for the task yo
 
 CHANGELOG
 -------------------------
-Mar 25, 2016 - Made script output more descriptive, Made code cleaner/less redundant
+Apr 04, 2016 - Fixed an issue preventing scripts from working with encrypted wallets, improved user experience
+
+Mar 25, 2016 - Made script output more descriptive, made code cleaner/less redundant, improved user experience (more user-friendly)
 
 Mar 24, 2016 - Fixed "SignMessage" and "VerifyMessage" scripts, added functionality to resend stuck transactions
 
